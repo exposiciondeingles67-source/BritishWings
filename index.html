@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BritishWings | Your Gateway to the Four Nations</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Experience the soul of the British Isles with BritishWings. Connecting you to England, Scotland, Wales, and Northern Ireland with premium service.">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <a href="#" class="logo">
+            <img src="assets/britishwings_logo_1772395117856.png" alt="BritishWings Logo">
+        </a>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Special Offers</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>The UK, Reimagined.</h1>
+            <p>Experience the soul of the British Isles. From the rugged Highlands to the rolling valleys of Wales,
+                BritishWings connects you to the heritage, mystery, and vibrant culture of our four distinct nations.
+            </p>
+        </div>
+
+        <!-- Booking Widget -->
+        <div class="booking-widget" data-aos="fade-up" data-aos-delay="300">
+            <div class="input-group">
+                <label><i class="fas fa-plane-departure"></i> Origin</label>
+                <input type="text" placeholder="Departure City">
+            </div>
+            <div class="input-group">
+                <label><i class="fas fa-plane-arrival"></i> Destination</label>
+                <select id="destination-select">
+                    <option value="">Select Nation</option>
+                    <option value="england">England</option>
+                    <option value="scotland">Scotland</option>
+                    <option value="wales">Wales</option>
+                    <option value="ni">Northern Ireland</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label><i class="far fa-calendar-alt"></i> Depart</label>
+                <input type="date">
+            </div>
+            <div class="input-group">
+                <label><i class="fas fa-users"></i> Passengers</label>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="btn-primary" id="search-btn">Book Flight</button>
+        </div>
+    </section>
+
+    <!-- Destination Encyclopedia -->
+    <section class="section" id="destinations">
+        <div class="section-header" data-aos="fade-up">
+            <h2>The Destination Encyclopedia</h2>
+            <p>Welcome to our comprehensive guide. Whether you are a history buff, an adrenaline seeker, or a culinary
+                enthusiast, the four nations of BritishWings offer a lifetime of discovery.</p>
+        </div>
+
+        <div class="dest-list">
+            <!-- 1. England -->
+            <div class="dest-item" data-aos="fade-up">
+                <div class="dest-image">
+                    <img src="assets/england_dest_1772395003631.png" alt="England Landscape">
+                </div>
+                <div class="dest-content">
+                    <span class="dest-badge">England</span>
+                    <h3>The Tapestry of Tradition</h3>
+                    <p>England is the largest and most populous nation in the UK. It is a land defined by its mix of
+                        deep-rooted history—stretching from the Neolithic era to the Industrial Revolution—and its role
+                        as a global cultural powerhouse.</p>
+                    <div class="dest-details">
+                        <div class="detail-box">
+                            <h4><i class="fas fa-map-marked-alt"></i> Geography</h4>
+                            <p>From London’s global hub to the surfing beaches of Cornwall and the natural beauty of the
+                                Lake District.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-utensils"></i> Gastronomy</h4>
+                            <p>Indulge in a traditional Sunday Roast with Yorkshire pudding or iconic Fish & Chips by
+                                the pier.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-star"></i> Vibe</h4>
+                            <p>Sophisticated, diverse, and iconic.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-landmark"></i> Icons</h4>
+                            <p>Represented by the historic Big Ben and the Tudor Rose.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Scotland -->
+            <div class="dest-item" data-aos="fade-up">
+                <div class="dest-image">
+                    <img src="assets/scotland_dest_1772395015913.png" alt="Scotland Landscape">
+                </div>
+                <div class="dest-content">
+                    <span class="dest-badge">Scotland</span>
+                    <h3>The Land of the Brave</h3>
+                    <p>Occupying the northern third of Great Britain, Scotland is a nation of intense national pride,
+                        dramatic landscapes, and a history of fierce independence and enlightenment.</p>
+                    <div class="dest-details">
+                        <div class="detail-box">
+                            <h4><i class="fas fa-mountain"></i> Geography</h4>
+                            <p>Home to the scenic Highlands, Ben Nevis, and deep glacial lakes known as Lochs, alongside
+                                historic Edinburgh.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-glass-whiskey"></i> Gastronomy</h4>
+                            <p>The home of Whisky; visit iconic distilleries or sample authentic Haggis and fresh
+                                Atlantic Salmon.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-wind"></i> Vibe</h4>
+                            <p>Majestic, ancient, and spirited.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-shield-alt"></i> Icons</h4>
+                            <p>Represented by the resilient Thistle and the Highlands peaks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Wales -->
+            <div class="dest-item" data-aos="fade-up">
+                <div class="dest-image">
+                    <img src="assets/wales_dest_1772395040544.png" alt="Wales Landscape">
+                </div>
+                <div class="dest-content">
+                    <span class="dest-badge">Wales (Cymru)</span>
+                    <h3>The Land of Castles and Song</h3>
+                    <p>Wales is a maritime nation where the ancient Welsh language is still spoken daily. Known for its
+                        mountainous terrain and massive medieval fortifications.</p>
+                    <div class="dest-details">
+                        <div class="detail-box">
+                            <h4><i class="fas fa-fort-awesome"></i> Geography</h4>
+                            <p>Dominated by Snowdonia (Eryri) mountain range—featuring the world's fastest zip line and
+                                Snowdon peak.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-bread-slice"></i> Gastronomy</h4>
+                            <p>Taste Cawl (lamb stew) or Welsh Rarebit (gourmet melted cheese on toast) in the castle
+                                capital of the world.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-music"></i> Vibe</h4>
+                            <p>Authentic, adventurous, and lyrical.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-dragon"></i> Icons</h4>
+                            <p>Represented by the Red Dragon and the vibrant Daffodil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Northern Ireland -->
+            <div class="dest-item" data-aos="fade-up">
+                <div class="dest-image">
+                    <img src="assets/ni_dest_1772395052235.png" alt="N. Ireland Landscape">
+                </div>
+                <div class="dest-content">
+                    <span class="dest-badge">Northern Ireland</span>
+                    <h3>A Giant Journey</h3>
+                    <p>Located across the Irish Sea, Northern Ireland is known for its staggering geological formations,
+                        complex history, and major filming locations for global cinema.</p>
+                    <div class="dest-details">
+                        <div class="detail-box">
+                            <h4><i class="fas fa-gem"></i> Geography</h4>
+                            <p>The Causeway Coast is home to Giant’s Causeway, 40,000 interlocking basalt columns, and
+                                the Fermanagh Lakelands.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-bacon"></i> Gastronomy</h4>
+                            <p>Enjoy an Ulster Fry featuring soda bread and potato farls, or visit Game of Thrones
+                                filming locations.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-scroll"></i> Vibe</h4>
+                            <p>Legendary, welcoming, and scenic.</p>
+                        </div>
+                        <div class="detail-box">
+                            <h4><i class="fas fa-clover"></i> Icons</h4>
+                            <p>Represented by the Shamrock and the geometric wonder of the Causeway.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Packages -->
+    <section class="section bg-light" id="packages">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Exclusive Travel Packages</h2>
+            <p>Hand-picked experiences designed to take you deeper into the heart of the kingdom.</p>
+        </div>
+        <div class="pkg-grid">
+            <div class="pkg-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>The Royal Circuit</h3>
+                <p><strong>England</strong>: 5-day luxury stay in London & Windsor. Includes 5-star hotel and a VIP
+                    Palace Tour.</p>
+                <div class="pkg-price">
+                    <sub>From</sub> <span>£899</span>
+                </div>
+                <button class="btn-primary" style="margin-top: 1.5rem;">Explore Now</button>
+            </div>
+
+            <div class="pkg-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Celtic Highlands</h3>
+                <p><strong>Scotland</strong>: 7-day adventure across Edinburgh & Inverness. Includes 4x4 Highland Safari
+                    and Whisky Tasting.</p>
+                <div class="pkg-price">
+                    <sub>From</sub> <span>£1,200</span>
+                </div>
+                <button class="btn-primary" style="margin-top: 1.5rem;">Explore Now</button>
+            </div>
+
+            <div class="pkg-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3>The Dragon’s Trail</h3>
+                <p><strong>Wales</strong>: 4-day history and peaks tour in Snowdonia & Cardiff. Includes Mountain
+                    Railway Pass.</p>
+                <div class="pkg-price">
+                    <sub>From</sub> <span>£650</span>
+                </div>
+                <button class="btn-primary" style="margin-top: 1.5rem;">Explore Now</button>
+            </div>
+
+            <div class="pkg-card" data-aos="zoom-in" data-aos-delay="400">
+                <h3>Emerald Coastline</h3>
+                <p><strong>N. Ireland</strong>: 4-day journey in Belfast & the Causeway. Includes coastal drive and
+                    Titanic Experience.</p>
+                <div class="pkg-price">
+                    <sub>From</sub> <span>£580</span>
+                </div>
+                <button class="btn-primary" style="margin-top: 1.5rem;">Explore Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Voices of the Kingdom</h2>
+            <p>Real stories from our global travelers.</p>
+        </div>
+        <div class="test-grid">
+            <div class="test-card" data-aos="fade-up">
+                <q>The Royal Circuit was seamless. The high tea on board actually felt like a premium lounge experience
+                    in the sky!</q>
+                <p class="test-author">— Elena R., Madrid</p>
+            </div>
+            <div class="test-card" data-aos="fade-up" data-aos-delay="100">
+                <q>The 4x4 safari through the Cairngorms was breathtaking. Truly personal service from the BritishWings
+                    staff.</q>
+                <p class="test-author">— Markus S., Berlin</p>
+            </div>
+            <div class="test-card" data-aos="fade-up" data-aos-delay="200">
+                <q>The staff were so friendly, they even taught me how to say 'Diolch' during the flight. Wales
+                    surprised me!</q>
+                <p class="test-author">— Chloe T., Toronto</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section" id="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Why Fly BritishWings?</h2>
+        </div>
+        <div class="feats-grid">
+            <div class="feat-item" data-aos="fade-up">
+                <div class="feat-icon"><i class="fas fa-mug-hot"></i></div>
+                <h3>Complimentary High Tea</h3>
+                <p>Enjoy premium teas and fresh scones on every flight over 45 minutes.</p>
+            </div>
+            <div class="feat-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feat-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Sustainable Travel</h3>
+                <p>Investing in carbon-offsetting projects across the UK’s national parks.</p>
+            </div>
+            <div class="feat-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feat-icon"><i class="fas fa-user-check"></i></div>
+                <h3>Locals onboard</h3>
+                <p>Our crew members are locals, ready to provide the best "insider" tips the moment you board.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="support">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/britishwings_logo_1772395117856.png" height="40" alt="Logo"
+                    style="filter: brightness(0) invert(1);">
+                <p>BritishWings – Connecting the Kingdom. Your premium link to the soul of the British Isles.</p>
+                <div class="footer-social" style="margin-top: 1.5rem;">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Special Offers</a></li>
+                    <li><a href="#">Sustainabilty Report</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem; opacity: 0.7;">Subscribe for royal offers.</p>
+                <input type="email" placeholder="Your Email"
+                    style="padding: 10px; border-radius: 5px; border: none; width: 100%;">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BritishWings Airways. All rights reserved.</p>
+            <p>Designed for the Four Nations.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
